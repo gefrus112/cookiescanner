@@ -20,38 +20,46 @@
     <section class="hero">
       <p class="eyebrow">COOKIE INTELLIGENCE / 01</p>
       <h1>Know what your<br /><em>cookies</em> know.</h1>
-      <p class="lede">Paste a cookie header or document.cookie value to audit its security posture. Everything is analyzed in your browser — your cookie never leaves this page.</p>
+      <p class="lede">Paste an authorized cookie snapshot to audit its security posture. Everything is analyzed in your browser — cookies, passwords, and account details are never uploaded.</p>
     </section>
 
     <section class="scanner-grid" aria-label="Cookie scanner">
       <div class="panel input-panel">
-        <div class="panel-heading"><span>01</span><h2>Cookie input</h2></div>
-        <label for="site-url">Website (optional)</label>
+        <div class="panel-heading"><span>01</span><h2>Authorized snapshot</h2></div>
+        <label for="site-url">Website URL</label>
         <input id="site-url" type="url" placeholder="https://example.com" autocomplete="url" />
+        <label for="snapshot-label">Snapshot context</label>
+        <select id="snapshot-label">
+          <option value="General audit">General audit</option>
+          <option value="Before sign-in">Before sign-in</option>
+          <option value="After sign-in">After sign-in</option>
+          <option value="After sign-out">After sign-out</option>
+        </select>
         <label for="cookie-input">Cookie header / document.cookie</label>
-        <textarea id="cookie-input" rows="8" spellcheck="false" placeholder="session_id=abc123; theme=dark; _ga=GA1.2.123456789.1234567890"></textarea>
+        <textarea id="cookie-input" rows="7" spellcheck="false" placeholder="session_id=abc123; theme=dark; _ga=GA1.2.123456789.1234567890"></textarea>
         <div class="actions">
-          <button id="scan-btn" class="primary">Scan cookies <span>→</span></button>
+          <button id="scan-btn" class="primary">Scan snapshot <span>→</span></button>
           <button id="demo-btn" class="ghost">Load demo</button>
           <button id="clear-btn" class="icon-btn" title="Clear input" aria-label="Clear input">⌫</button>
         </div>
-        <p class="privacy-note">⌁ No network request is made with your cookie data.</p>
+        <p class="privacy-note">⌁ Local only. Email and passwords are not needed or collected.</p>
+        <p class="scope-note">A URL is context only: a normal web page cannot read another site's cookies. Use this with a site you own or are authorized to assess.</p>
       </div>
 
       <div class="panel result-panel" aria-live="polite">
         <div class="panel-heading"><span>02</span><h2>Security report</h2><span id="status" class="status">READY</span></div>
-        <div id="empty-state" class="empty-state"><div class="radar">◎</div><p>Your report will appear here.</p><small>Paste a cookie string and start a local audit.</small></div>
+        <div id="empty-state" class="empty-state"><div class="radar">◎</div><p>Your report will appear here.</p><small>Paste one authorized cookie snapshot and start a local audit.</small></div>
         <div id="report" class="report hidden">
           <div class="score-row"><div><p class="metric-label">RISK SCORE</p><strong id="score">—</strong><span>/100</span></div><div id="risk-label" class="risk-label">—</div></div>
           <div class="meter"><span id="meter-fill"></span></div>
-          <div class="stats"><div><strong id="cookie-count">0</strong><small>cookies found</small></div><div><strong id="issue-count">0</strong><small>issues detected</small></div><div><strong id="secure-count">0</strong><small>secure flags</small></div></div>
+          <div class="stats"><div><strong id="cookie-count">0</strong><small>cookies found</small></div><div><strong id="issue-count">0</strong><small>issues detected</small></div><div><strong id="secure-count">0</strong><small>secure signals</small></div></div>
           <h3>Findings</h3><div id="findings" class="findings"></div>
           <div id="site-result" class="site-result hidden"></div>
         </div>
       </div>
     </section>
 
-    <section class="how-it-works"><p class="eyebrow">WHAT WE CHECK</p><div class="checks"><div><b>01</b><h3>Flags</h3><p>Secure, HttpOnly and SameSite protections.</p></div><div><b>02</b><h3>Exposure</h3><p>Session and sensitive cookie naming patterns.</p></div><div><b>03</b><h3>Hygiene</h3><p>Expiry, domain scope and third-party risk signals.</p></div></div></section>
+    <section class="how-it-works"><p class="eyebrow">WHAT WE CHECK</p><div class="checks"><div><b>01</b><h3>Flags</h3><p>Secure, HttpOnly and SameSite protections when those attributes are supplied.</p></div><div><b>02</b><h3>Exposure</h3><p>Session and sensitive cookie naming patterns without inspecting account content.</p></div><div><b>03</b><h3>Lifecycle</h3><p>Compare snapshots from before sign-in, after sign-in, and after sign-out yourself.</p></div></div></section>
   </main>
   <footer><span>CookieScope / defensive security utility</span><span>Built for authorized audits only</span></footer>
   <script src="app.js"></script>
