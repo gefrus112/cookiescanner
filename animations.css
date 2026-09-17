@@ -1,0 +1,15 @@
+/* Optional motion layer for the CookieScope hero and cards. */
+.hero-copy, .orbit, .feature-strip, .scanner-grid, .trust-grid { animation: content-in .8s cubic-bezier(.2,.8,.2,1) both; }
+.orbit { animation-delay: .12s; }
+.feature-strip { animation-delay: .2s; }
+.scanner-grid { animation-delay: .28s; }
+.trust-grid { animation-delay: .36s; }
+.feature-card, .trust-card, .panel { transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
+.feature-card:hover, .trust-card:hover, .panel:hover { transform: translateY(-4px); border-color: #ff8a3d99; box-shadow: 0 14px 45px #00000033, 0 0 26px #ff8a3d12; }
+.orbit::after { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 1px solid #ffb27622; animation: sonar 3.6s ease-out infinite; }
+.primary { position: relative; overflow: hidden; }
+.primary::after { content: ''; position: absolute; inset: 0; transform: translateX(-110%) skewX(-20deg); background: #fff8; animation: button-sweep 4s ease-in-out infinite; }
+@keyframes content-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sonar { 0% { opacity: .7; transform: scale(.72); } 100% { opacity: 0; transform: scale(1.16); } }
+@keyframes button-sweep { 0%, 55% { transform: translateX(-110%) skewX(-20deg); } 72%, 100% { transform: translateX(170%) skewX(-20deg); } }
+@media (prefers-reduced-motion: reduce) { .hero-copy, .orbit, .feature-strip, .scanner-grid, .trust-grid, .primary::after, .orbit::after { animation: none; } .feature-card, .trust-card, .panel { transition: none; } }
