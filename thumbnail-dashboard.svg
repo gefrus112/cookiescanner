@@ -1,1 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="CookieScope orange and white cybersecurity dashboard preview"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15110f"/><stop offset="1" stop-color="#2a1710"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1280" height="720" fill="url(#bg)"/><path d="M0 120h1280M0 240h1280M0 360h1280M0 480h1280M0 600h1280M160 0v720M320 0v720M480 0v720M640 0v720M800 0v720M960 0v720M1120 0v720" stroke="#ff8a3d" opacity=".1"/><rect x="62" y="48" width="1156" height="624" rx="18" fill="#211a16" stroke="#69422e"/><circle cx="99" cy="84" r="7" fill="#ff8a3d" filter="url(#glow)"/><text x="122" y="92" fill="#fffaf4" font-family="Arial,sans-serif" font-size="22" font-weight="700">CookieScope</text><text x="1010" y="90" fill="#ffb276" font-family="monospace" font-size="12">LOCAL-FIRST / READY</text><text x="104" y="177" fill="#ff8a3d" font-family="monospace" font-size="15" letter-spacing="4">COOKIE INTELLIGENCE / 01</text><text x="100" y="260" fill="#fffaf4" font-family="Arial,sans-serif" font-size="78" font-weight="700">Know what your</text><text x="100" y="342" fill="#ff8a3d" font-family="Arial,sans-serif" font-size="78" font-weight="700">cookies know.</text><rect x="100" y="405" width="510" height="92" rx="8" fill="#191310" stroke="#76513e"/><text x="126" y="442" fill="#9d7962" font-family="monospace" font-size="12">AUTHORIZED SNAPSHOT · AFTER SIGN-IN</text><text x="126" y="475" fill="#fffaf4" font-family="monospace" font-size="15">session_id=••••••••; theme=••••••</text><rect x="650" y="405" width="445" height="188" rx="8" fill="#191310" stroke="#76513e"/><text x="681" y="438" fill="#b9b1aa" font-family="monospace" font-size="12">RISK SCORE</text><text x="681" y="510" fill="#ff8a3d" font-family="monospace" font-size="66" font-weight="700">44</text><text x="790" y="501" fill="#ffb276" font-family="monospace" font-size="14">REVIEW NEEDED</text><rect x="681" y="536" width="350" height="7" rx="4" fill="#49362b"/><rect x="681" y="536" width="154" height="7" rx="4" fill="#ff8a3d"/><text x="100" y="620" fill="#8c7568" font-family="monospace" font-size="12">MASKED PREVIEW  /  PASSWORDS NEVER REQUIRED  /  AUTHORIZED AUDITS ONLY</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CookieScope privacy preview</title>
+  <desc id="desc">Lightweight privacy and safety preview panel for CookieScope scanner.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#17120f"/>
+      <stop offset="100%" stop-color="#2a201d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f7c195"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <g opacity="0.16">
+    <circle cx="1230" cy="210" r="260" fill="#ff8a3d"/>
+    <circle cx="320" cy="740" r="260" fill="#ffb26b"/>
+  </g>
+
+  <g transform="translate(120 120)">
+    <rect width="1360" height="660" rx="30" fill="#1d1513" stroke="#4b3d35"/>
+    <rect x="70" y="70" width="430" height="520" rx="28" fill="#221b18"/>
+    <text x="100" y="128" font-family="Verdana, Arial, sans-serif" font-size="24" fill="#ffb279">SAFETY / 03</text>
+    <text x="100" y="196" font-family="Verdana, Arial, sans-serif" font-size="52" font-weight="700" fill="#fffaf4">Keep secrets</text>
+    <text x="100" y="252" font-family="Verdana, Arial, sans-serif" font-size="52" font-weight="700" fill="#ff9d61">out of the scan.</text>
+    <text x="100" y="332" font-family="Verdana, Arial, sans-serif" font-size="24" fill="#c7b7af">Never paste passwords, access tokens,</text>
+    <text x="100" y="366" font-family="Verdana, Arial, sans-serif" font-size="24" fill="#c7b7af">or live credentials into the scanner.</text>
+
+    <g transform="translate(620 120)">
+      <rect width="650" height="430" rx="26" fill="#1c1412" stroke="#473c36"/>
+      <rect x="42" y="38" width="566" height="46" rx="12" fill="#2b221d"/>
+      <rect x="42" y="116" width="566" height="58" rx="12" fill="#2b221d"/>
+      <rect x="42" y="198" width="566" height="58" rx="12" fill="#2b221d"/>
+      <rect x="42" y="280" width="566" height="58" rx="12" fill="#2b221d"/>
+      <rect x="42" y="362" width="206" height="42" rx="12" fill="#ff8a3d"/>
+      <rect x="470" y="362" width="138" height="42" rx="12" fill="#312c28"/>
+      <circle cx="70" cy="145" r="10" fill="#ffb276"/>
+      <circle cx="100" cy="145" r="10" fill="#ffc894"/>
+      <circle cx="130" cy="145" r="10" fill="#fffaf4"/>
+      <g opacity="0.9">
+        <rect x="84" y="238" width="180" height="20" rx="10" fill="#ffb276"/>
+        <rect x="290" y="238" width="120" height="20" rx="10" fill="#ffb276"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CookieScope landing preview</title>
+  <desc id="desc">Dark orange-themed product landing page mockup for CookieScope cookie security scanner.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#130f0d"/>
+      <stop offset="100%" stop-color="#211915"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffb26b"/>
+      <stop offset="100%" stop-color="#ff7a3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.15">
+    <circle cx="1310" cy="120" r="220" fill="#ff8a3d"/>
+    <circle cx="180" cy="760" r="260" fill="#ff9f5a"/>
+  </g>
+  <rect x="80" y="80" width="1440" height="740" rx="28" fill="#1b1412" stroke="#493b34"/>
+  <rect x="120" y="120" width="1360" height="68" rx="16" fill="#201914"/>
+  <circle cx="170" cy="154" r="8" fill="#ff8a3d"/>
+  <circle cx="200" cy="154" r="8" fill="#f6c29a"/>
+  <circle cx="230" cy="154" r="8" fill="#fffaf4"/>
+  <rect x="1090" y="140" width="200" height="24" rx="12" fill="#2d241f"/>
+  <rect x="1305" y="140" width="120" height="24" rx="12" fill="#ff8a3d" opacity="0.9"/>
+
+  <g>
+    <text x="150" y="260" font-family="Verdana, Arial, sans-serif" font-size="64" font-weight="700" fill="#fffaf4">Know what your</text>
+    <text x="150" y="332" font-family="Verdana, Arial, sans-serif" font-size="64" font-weight="700" fill="#ff9a5a">cookies</text>
+    <text x="150" y="394" font-family="Verdana, Arial, sans-serif" font-size="64" font-weight="700" fill="#fffaf4">know.</text>
+    <text x="150" y="470" font-family="Verdana, Arial, sans-serif" font-size="24" fill="#bcaea7">Preview an authorized cookie snapshot and review its risk before</text>
+    <text x="150" y="506" font-family="Verdana, Arial, sans-serif" font-size="24" fill="#bcaea7">sharing or investigating it.</text>
+    <rect x="150" y="548" width="210" height="62" rx="16" fill="url(#accent)"/>
+    <text x="210" y="590" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="22" font-weight="700" fill="#1c120f">Preview scan</text>
+    <rect x="390" y="548" width="180" height="62" rx="16" fill="#201914" stroke="#51443b"/>
+    <text x="480" y="590" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="22" fill="#f8f0e9">Load demo</text>
+  </g>
+
+  <g transform="translate(850 180)">
+    <rect width="470" height="470" rx="26" fill="#201914" stroke="#433a34"/>
+    <rect x="36" y="30" width="398" height="48" rx="12" fill="#281f1b"/>
+    <text x="62" y="62" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#ffb37c">Authorized snapshot</text>
+    <rect x="36" y="108" width="398" height="46" rx="12" fill="#2b231e"/>
+    <rect x="36" y="180" width="398" height="118" rx="12" fill="#2b231e"/>
+    <rect x="36" y="326" width="180" height="52" rx="12" fill="#ff8a3d" opacity="0.95"/>
+    <rect x="254" y="326" width="180" height="52" rx="12" fill="#312a26"/>
+    <circle cx="64" cy="266" r="12" fill="#ffb276"/>
+    <circle cx="96" cy="266" r="12" fill="#ffc899"/>
+    <circle cx="128" cy="266" r="12" fill="#fffaf4"/>
+    <text x="62" y="394" font-family="Verdana, Arial, sans-serif" font-size="22" font-weight="700" fill="#fffaf4">RISK SCORE</text>
+    <text x="308" y="394" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffb276">32</text>
+  </g>
+</svg>

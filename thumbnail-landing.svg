@@ -1,0 +1,53 @@
+# CookieScope
+
+A polished, orange-and-white, local-first cybersecurity cookie scanner for defensive and authorized audits.
+
+## Website preview gallery
+
+![CookieScope landing page preview](thumbnail-landing.svg)
+
+![CookieScope website preview](thumbnail-website.svg)
+
+![CookieScope audit dashboard preview](thumbnail-dashboard.svg)
+
+![CookieScope privacy-focused scan preview](thumbnail-privacy.svg)
+
+## Publish it as a website
+
+This repository is a static site and is already ready to publish on GitHub Pages.
+
+1. Open your repository on GitHub.
+2. Go to Settings → Pages.
+3. Set the source to the `main` branch and root folder (`/`).
+4. Save.
+5. GitHub will publish the site at:
+   `https://gefrus112.github.io/cookiescanner/`
+
+The site entry point is `index.html`, so no build step is required.
+
+## Open the website locally
+
+Open [`index.html`](index.html) directly, or run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit <http://localhost:8000>.
+
+## What it does
+
+- Uses orange-and-white tabs for Scanner, How it works, and Safety.
+- Accepts an authorized website URL as context and a cookie snapshot for local analysis.
+- Supports General audit, Before sign-in, After sign-in, and After sign-out labels.
+- Shows a masked cookie preview by default with an optional local Show values toggle.
+- Highlights potentially sensitive cookie names and displays a risk score.
+- Includes multiple visual thumbnails for the repository and site previews.
+
+## Safety and privacy
+
+Do not enter an email address, password, access token, bearer token, or live credential. CookieScope does not need them. Cookie values are processed in the browser and are not sent to a server.
+
+The URL is context only. A normal webpage cannot read another website's cookies, so this app does not automatically log in, log out, crawl, probe, or scan remote sites. Use only snapshots from systems you are authorized to inspect.
+
+For complete cookie-attribute review, inspect authorized browser or proxy data for Secure, HttpOnly, SameSite, Domain, and expiration settings. A plain document.cookie string does not capture everything.
