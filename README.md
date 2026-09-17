@@ -1,20 +1,14 @@
 # CookieScope
 
-A local-first cybersecurity cookie scanner for defensive, authorized audits. Paste a `Cookie` header or `document.cookie` snapshot and get a quick risk report in your browser.
+![CookieScope website preview](thumbnail-website.svg)
 
-![CookieScope scanner thumbnail](thumbnail.svg)
+A polished, orange-and-white, local-first cybersecurity cookie scanner for defensive and authorized audits.
 
-## Features
+![CookieScope dashboard preview](thumbnail-dashboard.svg)
 
-- Parses cookie names and values locally — cookie data is never sent to a server.
-- Accepts a website URL as report context, without crawling or contacting that website.
-- Labels snapshots as general audit, before sign-in, after sign-in, or after sign-out so you can compare lifecycle states manually.
-- Flags names that may represent sessions, authentication tokens, CSRF tokens, or personal data.
-- Shows a risk score, findings, cookie count, and a thumbnail preview in this README.
+## Open the website
 
-## Run it
-
-Open `index.html` directly, or serve the folder with any static server:
+This repository is a static website. Open [`index.html`](index.html) directly, or run it locally:
 
 ```bash
 python3 -m http.server 8000
@@ -22,10 +16,21 @@ python3 -m http.server 8000
 
 Then visit <http://localhost:8000>.
 
-## Important safety and scope
+To publish it as a public website, enable **GitHub Pages** for the `main` branch and the repository root. The site entry point is `index.html`.
 
-Do **not** enter an email address, password, access token, or live credential into this tool. An email address is not required for cookie analysis. The app only needs a cookie snapshot that you are authorized to inspect.
+## What it does
 
-A regular browser page cannot read cookies belonging to an unrelated website because of the same-origin policy. Therefore, the URL field is context only; this app does not automatically log in, log out, crawl, probe, or scan another site. To assess lifecycle behavior, capture authorized snapshots yourself before sign-in, after sign-in, and after sign-out, then run each snapshot with the matching label.
+- Uses orange-and-white tabs for Scanner, How it works, and Safety.
+- Accepts an authorized website URL as context and a cookie snapshot for local analysis.
+- Supports General audit, Before sign-in, After sign-in, and After sign-out labels.
+- Shows a masked cookie preview by default with an optional local **Show values** toggle.
+- Highlights potentially sensitive cookie names and displays a risk score.
+- Includes two visual thumbnails for the repository README and website preview.
 
-This is a review aid, not a complete penetration test. Cookie attributes such as `Secure`, `HttpOnly`, `SameSite`, `Domain`, and `Expires` are available for review when captured from an authorized browser or proxy response, but a plain `document.cookie` string does not include all of them.
+## Safety and privacy
+
+Do **not** enter an email address, password, access token, bearer token, or live credential. CookieScope does not need them. Cookie values are processed in the browser and are not sent to a server.
+
+The URL is context only. A normal webpage cannot read another website's cookies, so this app does not automatically log in, log out, crawl, probe, or scan remote sites. Use only snapshots from systems you own or are explicitly authorized to assess.
+
+For complete cookie-attribute review, inspect authorized browser or proxy data for `Secure`, `HttpOnly`, `SameSite`, `Domain`, and expiration settings. A plain `document.cookie` string does not contain all of those attributes.
